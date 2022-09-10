@@ -1,0 +1,15 @@
+name = "miniflare-fetch-bug"
+main = "dist/worker.mjs"
+compatibility_date = "2022-07-29"
+usage_model = "bundled"
+account_id = ""
+
+[build]
+command = "npm run build"
+watch_dir = [
+  "src"
+]
+
+[[build.upload.rules]]
+type = "ESModule"
+globs = ["**/*.mjs"]
